@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appointmentApp.controller.MainMenuController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="49.0" layoutY="49.0" prefHeight="205.0" prefWidth="215.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="viewAptBtn" mnemonicParsing="false" onAction="#onActionViewApt" prefHeight="25.0" prefWidth="130.0" text="View Appointments" />
+            <Button fx:id="viewCustomerBtn" mnemonicParsing="false" onAction="#onActionViewCustomer" prefHeight="25.0" prefWidth="129.0" text="View Customer" GridPane.rowIndex="1" />
+            <Button fx:id="viewReportsBtn" mnemonicParsing="false" onAction="#onActionViewReports" prefHeight="25.0" prefWidth="129.0" text="View Reports" GridPane.rowIndex="2" />
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#onActionExit" prefHeight="25.0" prefWidth="129.0" text="Exit" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label layoutX="60.0" layoutY="14.0" text="Main Menu">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

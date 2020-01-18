@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appointmentApp.controller.AddAppointmentScreenController">
+   <children>
+      <TableView fx:id="customerNameTableView" layoutX="113.0" layoutY="117.0" prefHeight="328.0" prefWidth="228.0">
+        <columns>
+          <TableColumn fx:id="customerNameCol" prefWidth="227.0" text="Customer Name" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="290.0" layoutY="117.0" prefHeight="217.0" prefWidth="327.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="121.0" />
+          <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="110.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="titleLbl" alignment="CENTER" text="Title" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="typeLbl" alignment="CENTER" layoutX="10.0" layoutY="15.0" text="Type" textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateLbl" alignment="CENTER" layoutX="10.0" layoutY="45.0" text="Date" textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="startLbl" alignment="CENTER" layoutX="10.0" layoutY="75.0" text="Start" textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="finishLbl" alignment="CENTER" layoutX="10.0" layoutY="105.0" text="Finish" textAlignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="finishComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="titleTxtFiield" prefHeight="25.0" prefWidth="149.0" GridPane.columnIndex="1" />
+            <ComboBox fx:id="startComboBox" layoutX="166.0" layoutY="241.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <DatePicker fx:id="dateDatePicker" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="typeComboBox" layoutX="166.0" layoutY="187.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label layoutX="197.0" layoutY="21.0" text="Add Appointment">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveBtn" layoutX="397.0" layoutY="414.0" mnemonicParsing="false" onAction="#onActionSaveAppointment" prefWidth="70.0" text="Save" />
+      <Button fx:id="cancelBtn" layoutX="471.0" layoutY="414.0" mnemonicParsing="false" onAction="#onActionCancelAppointment" prefWidth="70.0" text="Cancel" />
+      <Button fx:id="backBtn" layoutX="547.0" layoutY="414.0" mnemonicParsing="false" onAction="#onActionBack" prefWidth="70.0" text="Back" />
+   </children>
+</AnchorPane>

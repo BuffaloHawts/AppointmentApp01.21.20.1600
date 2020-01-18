@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="loginAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appointmentApp.controller.LoginScreenController">
+   <children>
+      <TextField fx:id="userNameTxtField" layoutX="102.0" layoutY="72.0" />
+      <TextField fx:id="passWordTxtField" layoutX="102.0" layoutY="103.0" />
+      <Label fx:id="userNameLbl" layoutX="40.0" layoutY="76.0" text="username" />
+      <Label fx:id="passWordlbl" layoutX="41.0" layoutY="106.0" text="password" />
+      <Label fx:id="titleLbl" layoutX="86.0" layoutY="29.0" text="Appointment Login" />
+      <Button fx:id="loginBtn" layoutX="203.0" layoutY="133.0" mnemonicParsing="false" onAction="#onActionLogin" text="Login" />
+   </children>
+</AnchorPane>

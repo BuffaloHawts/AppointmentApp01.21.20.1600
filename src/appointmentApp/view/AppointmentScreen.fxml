@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appointmentApp.controller.AppointmentScreenController">
+   <children>
+      <Label layoutX="228.0" layoutY="35.0" text="Appointments" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="appointmentTableView" layoutX="24.0" layoutY="134.0" prefHeight="294.0" prefWidth="650.0">
+        <columns>
+          <TableColumn fx:id="customerCol" prefWidth="108.0" text="Customer" />
+          <TableColumn fx:id="titleCol" prefWidth="108.0" text="Title" />
+            <TableColumn fx:id="consultantCol" prefWidth="108.0" text="Consultant" />
+            <TableColumn fx:id="typeCol" prefWidth="108.0" text="Type" />
+            <TableColumn fx:id="startCol" prefWidth="108.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="108.0" text="End" />
+        </columns>
+      </TableView>
+      <Button fx:id="addAppointmentBtn" layoutX="483.0" layoutY="97.0" mnemonicParsing="false" onAction="#onActionAddAppointment" prefWidth="60.0" text="Add" />
+      <Button fx:id="editAppointmentBtn" layoutX="548.0" layoutY="97.0" mnemonicParsing="false" onAction="#onActionEditAppointment" prefWidth="60.0" text="Edit" />
+      <Button fx:id="deleteAppointmentBtn" layoutX="614.0" layoutY="97.0" mnemonicParsing="false" onAction="#onActionDeleteAppointment" prefHeight="25.0" prefWidth="60.0" text="Delete" />
+      <ChoiceBox layoutX="24.0" layoutY="101.0" prefWidth="150.0" />
+      <Button fx:id="backBtn" layoutX="614.0" layoutY="448.0" mnemonicParsing="false" onAction="#onActionBack" prefHeight="25.0" prefWidth="60.0" text="Back" />
+   </children>
+</AnchorPane>
